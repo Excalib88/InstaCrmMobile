@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 import { TextInput, Button } from 'react-native-paper';
 import APIKit from './APIKit';
-import { login} from '../AuthProvider';
+import { login } from '../AuthProvider';
 
 const Auth = () => {
     const [credentials, setCredentials] = useState({

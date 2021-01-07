@@ -5,6 +5,7 @@ import Auth from './Auth';
 import Main from './Main';
 import Register from './Register';
 import { useAuth, authFetch, login, logout} from '../AuthProvider';
+import IdentityMain from './IdentityMain/IdentityMain';
 
 export const Router = () => {
     const [logged] = useAuth();
@@ -14,7 +15,8 @@ export const Router = () => {
                 {!logged && <>
                     <Route path="/register" component={Register}/>
                     <Route path="/auth" component={Auth}/>
-                    <Redirect to="/register"/>
+                    <Route path="/identity" component={IdentityMain}/>
+                    <Redirect to="/identity"/>
                 </>}
                 {
                     logged && <>

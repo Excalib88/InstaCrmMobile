@@ -10,7 +10,6 @@ const Product = () => {
             .then(r => r.json())
             .then(_products => {
                 setProducts(_products.data);
-                console.log(_products.data);
             });
     }, []);
     
