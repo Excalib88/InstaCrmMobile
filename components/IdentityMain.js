@@ -1,10 +1,7 @@
 import React, {Layout} from 'react';
 import Router from './components/Router';
 
-
-let isAuth = false;
-
-const App = () => {
+const IdentityMain = () => {
   return (
     <>
       <Router />
@@ -12,4 +9,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default IdentityMain;
