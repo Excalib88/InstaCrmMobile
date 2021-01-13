@@ -9,7 +9,6 @@ const Profile = () => {
                 <Link className="menu-item" to="/auth" onClick={logout}>Logout</Link>
             </div>
             <div className="info">
-                <Label>username</Label>
             </div>
         </>
     );
